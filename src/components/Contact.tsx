@@ -57,20 +57,20 @@ const Contact = () => {
               <div className="space-y-4">
                 <div>
                   <h3 className="font-semibold text-lg">Email</h3>
-                  <p className="text-white/80">contact@realsync.tech</p>
+                  <p className="text-white/80">realsync.info@gmail.com</p>
                 </div>
                 
                 <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
-                  <p className="text-white/80">+1 (555) 123-4567</p>
+                  <p className="text-white/80">+39 xxxxxxxxx</p>
                 </div>
                 
                 <div>
                   <h3 className="font-semibold text-lg">Address</h3>
                   <p className="text-white/80">
-                    123 Tech Park Drive<br />
-                    Silicon Valley, CA 94025<br />
-                    United States
+                    via xxx<br />
+                    Turin, CA 10138<br />
+                    Italy
                   </p>
                 </div>
               </div>

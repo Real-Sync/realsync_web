@@ -2,6 +2,9 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
+import logo from '@/assets/logo.png'; // Importa il logo
+
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -14,6 +17,7 @@ const Navbar = () => {
     <nav className="bg-white/90 backdrop-blur-sm py-4 px-6 fixed w-full top-0 z-50 border-b border-gray-100">
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center">
+        <img src={logo} alt="RealSync Logo" className="h-8 w-auto" />
           <a href="#" className="flex items-center">
             <span className="text-realsync-navy font-bold text-2xl">Real<span className="text-realsync-teal">Sync</span></span>
           </a>

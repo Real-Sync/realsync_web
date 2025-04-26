@@ -5,7 +5,7 @@ import { ArrowRight } from "lucide-react";
 const Hero = () => {
   return (
     <div className="relative pt-20 bg-gradient-to-b from-white to-realsync-gray">
-      <div className="container mx-auto px-6 pt-16 pb-24">
+      <div className="container mx-auto px-6 pt-16 pb-44">
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 space-y-6 md:pr-12 animate-fade-up">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
@@ -15,7 +15,7 @@ const Hero = () => {
             <p className="text-lg md:text-xl text-realsync-darkgray mt-4">
               Connect your real-time simulators to remote hardware devices with our innovative gateway technology. Test faster, collaborate better.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
+            <div className="flex flex-col sm:flex-row gap-4 pt-4 relative z-10">
               <Button className="bg-realsync-teal hover:bg-realsync-navy transition-all duration-200 text-white px-8 py-6 text-lg">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
