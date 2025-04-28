@@ -1,6 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
-import mapSvg from "@/assets/map.svg";
+import mapSvg from "@/assets/map.png";
 
 
 const Hero = () => {
