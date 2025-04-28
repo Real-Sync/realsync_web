@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
 
@@ -38,19 +37,13 @@ const Hero = () => {
                   </div>
                 </div>
                 <div className="p-6">
-                  <div className="h-64 bg-realsync-gray/60 rounded flex items-center justify-center">
-                    <div className="text-center">
-                      <div className="w-24 h-24 bg-realsync-navy/10 mx-auto rounded-full flex items-center justify-center">
-                        <div className="w-16 h-16 bg-realsync-teal/20 rounded-full flex items-center justify-center">
-                          <div className="w-8 h-8 bg-realsync-teal rounded-full"></div>
-                        </div>
-                      </div>
-                      <p className="text-sm text-realsync-darkgray mt-4">RealSync Gateway</p>
-                      <div className="mt-4 flex justify-center space-x-2">
-                        <div className="h-1 w-16 bg-realsync-teal animate-pulse rounded"></div>
-                        <div className="h-1 w-8 bg-realsync-lightblue rounded"></div>
-                      </div>
-                    </div>
+                  <div className="h-64 bg-realsync-navy/95 rounded flex items-center justify-center relative overflow-hidden">
+                    <img
+                      src="/lovable-uploads/7d34ecf5-0230-4245-ad43-1909abc2613c.png"
+                      alt="RealSync European Coverage Map"
+                      className="w-full h-full object-contain p-4"
+                    />
+                    <div className="absolute inset-0 bg-[radial-gradient(circle,transparent_30%,rgba(10,35,66,0.2)_100%)]"></div>
                   </div>
                 </div>
               </div>
