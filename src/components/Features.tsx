@@ -38,13 +38,20 @@ const Features = () => {
       iconBg: "bg-pink-100",
       textColor: "text-pink-800"
     },
-    // {
-    //   id: 6,
-    //   title: "Advanced Analytics",
-    //   description: "Gain insights from comprehensive test data analysis and reporting.",
-    //   iconBg: "bg-cyan-100",
-    //   textColor: "text-cyan-800"
-    // }
+    {
+      id: 6,
+      title: "Multi protocol Support",
+      description: "Supports a wide range of hardware devices and protocols for maximum compatibility.",
+      iconBg: "bg-cyan-100",
+      textColor: "text-cyan-800"
+    },
+    {
+      id: 7,
+      title: "Multi platform Support",
+      description: "Control software available on Android OS, Ipad OS, Mac OS, Windows, Linux to meet the needs of the company.",
+      iconBg: "bg-cyan-100",
+      textColor: "text-cyan-800"
+    }
   ];
 
   return (

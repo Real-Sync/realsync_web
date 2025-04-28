@@ -23,25 +23,67 @@ const Contact = () => {
     }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsSubmitting(true);
-    
-    // Simulate form submission
-    setTimeout(() => {
+    try {
+      const response = await fetch('https://realsync.pythonanywhere.com/messages', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      if (response.ok) {
+        toast({
+          title: "Message sent",
+          description: "We've received your message and will get back to you soon.",
+        });
+        // Reset form after successful submission
+        setFormData({
+          name: '',
+          email: '',
+          company: '',
+          message: ''
+        });
+      } else {
+        // Handle error response
+        const errorData = await response.text();
+        console.error('Error sending message:', errorData);
+        toast({
+          title: "Error",
+          description: "There was a problem sending your message. Please try again later.",
+          variant: "destructive"
+        });
+      }
+    } catch (error) {
+      console.error('Network error:', error);
       toast({
-        title: "Message sent",
-        description: "We've received your message and will get back to you soon.",
+        title: "Network error",
+        description: "Could not connect to our servers. Please check your internet connection.",
+        variant: "destructive"
       });
-      setFormData({
-        name: '',
-        email: '',
-        company: '',
-        message: ''
-      });
+    } finally {
       setIsSubmitting(false);
-    }, 1500);
+    }
   };
+    
+  //   // Simulate form submission
+  //   setTimeout(() => {
+  //     toast({
+  //       title: "Message sent",
+  //       description: "We've received your message and will get back to you soon.",
+  //     });
+  //     setFormData({
+  //       name: '',
+  //       email: '',
+  //       company: '',
+  //       message: ''
+  //     });
+  //     setIsSubmitting(false);
+  //   }, 1500);
+  // };
 
   return (
     <section id="contact" className="py-20 bg-realsync-gray">
@@ -60,19 +102,19 @@ const Contact = () => {
                   <p className="text-white/80">realsync.info@gmail.com</p>
                 </div>
                 
-                <div>
+                {/* <div>
                   <h3 className="font-semibold text-lg">Phone</h3>
                   <p className="text-white/80">+39 xxxxxxxxx</p>
-                </div>
+                </div> */}
                 
-                <div>
+                {/* <div>
                   <h3 className="font-semibold text-lg">Address</h3>
                   <p className="text-white/80">
                     via xxx<br />
                     Turin, CA 10138<br />
                     Italy
                   </p>
-                </div>
+                </div> */}
               </div>
             </div>
             

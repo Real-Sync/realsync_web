@@ -32,7 +32,7 @@ const About = () => {
               We realized that as engineering teams become increasingly distributed, the need for remote hardware testing capabilities was growing exponentially. Traditional solutions were expensive, complicated, and often required shipping physical hardware between locations.
             </p>
             <p className="text-realsync-darkgray mb-4">
-              Our innovative gateway technology bridges the gap between simulation environments and physical hardware, enabling seamless remote testing with ultra-low latency. This allows engineering teams to collaborate effectively regardless of their physical location.
+              Our technology bridges the gap between simulation environments and physical hardware, enabling seamless remote testing with ultra-low latency. This allows engineering teams to collaborate effectively regardless of their physical location.
             </p>
             <p className="text-realsync-darkgray">
               Today, RealSync solutions are used by leading companies in automotive, aerospace, industrial automation, and energy sectors to accelerate their development cycles and improve product quality.
