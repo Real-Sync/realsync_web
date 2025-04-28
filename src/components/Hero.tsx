@@ -1,6 +1,8 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import mapSvg from "@/assets/map.svg";
+
 
 const Hero = () => {
   return (
@@ -40,12 +42,22 @@ const Hero = () => {
                 <div className="p-6">
                   <div className="h-64 bg-realsync-gray/60 rounded flex items-center justify-center">
                     <div className="text-center">
-                      <div className="w-24 h-24 bg-realsync-navy/10 mx-auto rounded-full flex items-center justify-center">
+         
+                      {/* <div className="w-24 h-24 bg-realsync-navy/10 mx-auto rounded-full flex items-center justify-center">
                         <div className="w-16 h-16 bg-realsync-teal/20 rounded-full flex items-center justify-center">
-                          <div className="w-8 h-8 bg-realsync-teal rounded-full"></div>
+                          <div className="w-8 h-8 bg-realsync-teal rounded-full">
+                          
+                          </div>
+                        </div>                
+                      </div> */}
+                      <div className="mx-auto">
+                          <img 
+                            src={mapSvg} 
+                            alt="RealSync Gateway" 
+                            className="w-28 md:w-36 lg:w-48"
+                          />
                         </div>
-                      </div>
-                      <p className="text-sm text-realsync-darkgray mt-4">RealSync Gateway</p>
+                      <p className="text-sm text-realsync-darkgray mt-1">RealSync interface</p>
                       <div className="mt-4 flex justify-center space-x-2">
                         <div className="h-1 w-16 bg-realsync-teal animate-pulse rounded"></div>
                         <div className="h-1 w-8 bg-realsync-lightblue rounded"></div>
