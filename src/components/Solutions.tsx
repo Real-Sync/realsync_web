@@ -53,9 +53,9 @@ const Solutions = () => {
               <div className="p-6">
                 <h3 className="text-xl font-semibold mb-3">{solution.title} Solutions</h3>
                 <p className="text-realsync-darkgray mb-4">{solution.description}</p>
-                <Button variant="outline" className="border-realsync-teal text-realsync-teal hover:bg-realsync-teal/5">
+                {/* <Button variant="outline" className="border-realsync-teal text-realsync-teal hover:bg-realsync-teal/5">
                   Learn more
-                </Button>
+                </Button> */}
               </div>
             </div>
           ))}
