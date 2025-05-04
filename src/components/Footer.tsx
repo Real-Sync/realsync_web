@@ -72,7 +72,8 @@ const Footer = () => {
         </div>
         
         <div className="border-t border-white/10 mt-12 pt-8 text-center md:flex md:justify-between md:text-left">
-          <p className="text-white/70">© {new Date().getFullYear()} RealSync. All rights reserved.</p>
+          {/* <p className="text-white/70">© {new Date().getFullYear()} RealSync. All rights reserved.</p> */}
+          <p className="text-white/70">{new Date().getFullYear()} RealSync. All rights reserved.</p>
           <div className="mt-4 md:mt-0 flex space-x-6 justify-center md:justify-start">
             <a href="#" className="text-white/70 hover:text-realsync-teal transition-colors"
             onClick={(e) => {
