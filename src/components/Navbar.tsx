@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import { Menu } from "lucide-react";
 import logo from '@/assets/logo.png';
+import { Link } from 'react-router-dom'; // Aggiungi questa importazione
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -56,6 +57,12 @@ const Navbar = () => {
           >
             Contact
           </a>
+          <Link 
+            to="/docs"
+            className="text-realsync-darkgray hover:text-realsync-navy transition-colors duration-200"          >
+            Documentation
+          </Link>
+
           <Button 
             className="bg-realsync-teal hover:bg-realsync-navy text-white"
             onClick={() => scrollToSection('#contact')}
