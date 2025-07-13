@@ -6,14 +6,14 @@ const Features = () => {
     {
       id: 1,
       title: "Real-Time Connectivity",
-      description: "Connect simulators to remote hardware with ultra-low latency for accurate test results.",
+      description: "Connect simulators to remote hardware with low latency for accurate tests.",
       iconBg: "bg-blue-100",
       textColor: "text-blue-800"
     },
     {
       id: 2, 
       title: "Secure Data Transfer",
-      description: "Enterprise-grade encryption ensures your testing data remains protected.",
+      description: "Encryption ensures your testing data remains protected without expose the personal network of the company.",
       iconBg: "bg-purple-100",
       textColor: "text-purple-800"
     },
@@ -24,13 +24,13 @@ const Features = () => {
       iconBg: "bg-green-100",
       textColor: "text-green-800"
     },
-    {
-      id: 4,
-      title: "Flexible Deployment",
-      description: "On-premises or cloud deployment options to suit your organization's needs.",
-      iconBg: "bg-amber-100",
-      textColor: "text-amber-800"
-    },
+    // {
+    //   id: 4,
+    //   title: "Flexible Deployment",
+    //   description: "On-premises or cloud deployment options to suit your organization's needs.",
+    //   iconBg: "bg-amber-100",
+    //   textColor: "text-amber-800"
+    // },
     {
       id: 5,
       title: "Remote Collaboration",

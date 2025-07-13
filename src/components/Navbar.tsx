@@ -57,6 +57,13 @@ const Navbar = () => {
           >
             Contact
           </a>
+          <a 
+            href="#presentation" 
+            className="text-realsync-darkgray hover:text-realsync-navy transition-colors duration-200"
+            onClick={(e) => { e.preventDefault(); scrollToSection('#presentation'); }}
+          >
+            Presentation
+          </a>
           <Link 
             to="/docs"
             className="text-realsync-darkgray hover:text-realsync-navy transition-colors duration-200"          >

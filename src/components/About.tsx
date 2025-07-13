@@ -14,7 +14,7 @@ const About = () => {
                   </div>
                   <h3 className="text-white text-2xl font-bold mb-3">Our Mission</h3>
                   <p className="text-white/80">
-                    To revolutionize hardware-in-the-loop testing by enabling seamless remote testing capabilities for engineering teams worldwide.
+                    To revolutionize hardware-in-the-loop testing by enabling seamless remote testing capabilities for engineering teams.
                   </p>
                 </div>
               </div>
@@ -34,9 +34,9 @@ const About = () => {
             <p className="text-realsync-darkgray mb-4">
               Our technology bridges the gap between simulation environments and physical hardware, enabling seamless remote testing with ultra-low latency. This allows engineering teams to collaborate effectively regardless of their physical location.
             </p>
-            <p className="text-realsync-darkgray">
+            {/* <p className="text-realsync-darkgray">
               Today, RealSync solutions are used by leading companies in automotive, aerospace, industrial automation, and energy sectors to accelerate their development cycles and improve product quality.
-            </p>
+            </p> */}
           </div>
         </div>
       </div>
