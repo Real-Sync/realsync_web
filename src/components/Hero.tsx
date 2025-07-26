@@ -14,7 +14,7 @@ const Hero = () => {
               <br />Made Simple
             </h1>
             <p className="text-lg md:text-xl text-realsync-darkgray mt-4">
-              Connect your remote hardware devices in real time with our innovative technology. Test faster, collaborate better.
+              Connect your remote hardware devices in real time.<br />Test faster, collaborate better.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4 relative z-10">
               {/* <Button className="bg-realsync-teal hover:bg-realsync-navy transition-all duration-200 text-white px-8 py-6 text-lg">
